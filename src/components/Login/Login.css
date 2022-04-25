@@ -1,0 +1,67 @@
+.login-container {
+  padding-top: 100px;
+}
+.login-card {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .login-card {
+    width: 50%;
+  }
+}
+.login-card h2 {
+  color: var(--main-color);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.login-card p {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .login-card h2 {
+    font-size: 20px;
+  }
+  .login-card p {
+    font-size: 15px;
+  }
+}
+.login-card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-card form select {
+  display: block;
+  padding: 10px 30px;
+  margin-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .login-card form select {
+    width: 50%;
+  }
+}
+.login-card form button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 14px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.login-card form button:hover {
+  background-color: var(--main-color-alt);
+}

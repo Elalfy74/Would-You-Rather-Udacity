@@ -1,0 +1,96 @@
+/*New Question*/
+.new-question-container {
+  padding-top: 40px;
+}
+.new-question-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .new-question-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+.new-question-container .cardNew {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  max-width: 80%;
+}
+@media (min-width: 1200px) {
+  .new-question-container .cardNew {
+    max-width: 40%;
+  }
+}
+.cardNew img {
+  width: 300px;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .cardNew img {
+    width: 150px;
+  }
+}
+.cardNew span {
+  position: relative;
+  color: #777;
+}
+.cardNew span::before,
+.cardNew span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: #777;
+}
+.cardNew span::before {
+  left: -50px;
+}
+.cardNew span::after {
+  right: -50px;
+}
+.cardNew input[type="text"] {
+  margin: auto;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid var(--main-color);
+  padding: 15px 10px;
+  font-size: 20px;
+  caret-color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .cardNew input[type="text"] {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+.cardNew input[type="text"]:focus {
+  outline: none;
+}
+.cardNew input[type="submit"] {
+  padding: 10px 15px;
+  background-color: var(--main-color);
+  border-radius: 6px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .cardNew input[type="submit"] {
+    font-size: 14px;
+  }
+}
+.cardNew input[type="submit"]:hover {
+  background-color: var(--main-color-alt);
+}

@@ -1,0 +1,41 @@
+/*Dasboard*/
+.dashboard-container {
+  padding-top: 40px;
+}
+.dashboard-container .dashboard {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .dashboard-container .dashboard {
+    width: 80%;
+  }
+}
+.dashboard-container .dashboard .topmenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ededed;
+  margin-bottom: 10px;
+}
+.dashboard-container .dashboard button {
+  width: 50%;
+  border: none;
+  padding: 10px 30px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.dashboard-container .dashboard button.active {
+  color: white;
+  background-color: var(--main-color);
+}
+.dashboard-container .dashboard ul {
+  width: 100%;
+}

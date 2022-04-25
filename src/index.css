@@ -1,234 +1,55 @@
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --section-color: #ececec;
+  --main-transition: 0.3s;
+  --main-padding: 60px;
+  --main-padding: 100px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #252525;
 }
-/* Login component */
-.bb{
-  margin-top: 100px;
+ul {
+  list-style: none;
 }
-.login{
-  box-shadow: 10px 10px 5px grey;
-  width: 50%;
-  height: 300px;
-  text-align: center;
-  margin: auto;
-  border:ridge;
-  border-radius:4px ;
-  font-weight: bold;
-}
-.login p{
-  font-weight: bold;
-  color: #4CAF50;;
-}
-.login select{
-  width: 30%;
-  margin: auto;
-  display: block;
-  height: 35px;
-}
-button[type=submit] {
-  width: 30%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin:  auto;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/*navbar */
-.nav-container{
-  background-color: whitesmoke;
-  height: 70px;
-}
-.active {
-  font-weight: bold;
-  background-color: lightgray;
-}
-.header-item{
-  display: inline-block;
-  margin-left: 40px;
-  margin-top: 20px;
-  color: grey;
-  font-size: x-large;
-  font-weight:bold;
+a {
   text-decoration: none;
 }
-.item{
-  display: inline-block;
-  margin-top: 20px;
-  color: grey;
-  font-size: large;
-  font-weight:bold;
-  margin-left: 40px;
-  text-decoration: none;
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
-.user{
-float: right;
-margin-right: 20px;
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
 }
-.user span{
-  font-weight: bold;
-  color: #686868;
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
 }
-.avatar-img{
-  height: 35px;
-  width: 35px;
-  padding-top: 10px; 
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
-.logout{
-  display: inline-block;
-  color: grey;
-  margin-left: 10px;
-  text-decoration: none;
-  background: none;
-}
-
-
-/*Dasboard*/
-
-.dashboard{
-  margin-top: 60px;
-    text-align: center;
-}
-.dashboard ul{
-  list-style-type: none;
-}
-
-.topmenu {
-  border-style: ridge;
-  overflow: hidden;
-  width: 490px;
-  margin: auto;
-  text-align: center;
-}
-
-.grennButton{
-  display: inline-block;
-  width: 50%;
-  background-color: #4CAF50;
-  cursor: pointer;
-}
-
-.whiteButton{
-  display: inline-block;
-  width: 50%;
-  background-color:white;
-  cursor: pointer;
-}
-
-/*Question*/
-
-.card {
-  height: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
-.card img{
-  float: left;
-  height: 100%;
-  width:50%;
-  border-radius: 50%;
-}
-
-.time, .or {
-  color: grey;
-  font-size: 11px;
-
-}
-
-.card .btn {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #4CAF50;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card .btn:hover {
-  opacity: 0.7;
-}
-
-/* LeaderBoard */
-
-.leaderBoard{
-  list-style-type: none;
-}
-.scoretext{
-  font-weight: bold;
-
-}
-.score{
-    height: 50px;
-    width: 50px;
-    background-color: gold;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    line-height: 50px;
-    font-weight: bold;
-    color: white;
-}
-
-
-/*New Question*/
-.cardNew {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
-.cardNew img{
-  width:100%
-
-}
-h2{
-  text-align: center;
-}
-.cardNew input{
-  margin: auto;
-  display: block;
-  width: 98%;
-  height: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.cardNew input[type=submit] {
-  width: 100%;
-  
-}
-
-/*QuestionView*/
-.cardQuestion {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-}
-.cardQuestion input[type=submit] {
-  width: 30%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin:  auto;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.voted{
-  color: #4CAF50;
-  font-weight: bold;
-}
-
-

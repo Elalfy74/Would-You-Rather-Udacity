@@ -1,0 +1,93 @@
+/*QuestionView*/
+.question-view-container {
+  padding-top: 40px;
+}
+.cardQuestion {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 20px 40px;
+}
+.cardQuestion img {
+  width: 200px;
+}
+@media (max-width: 767px) {
+  .cardQuestion img {
+    width: 150px;
+  }
+}
+.cardQuestion h1 {
+  color: var(--main-color);
+}
+.cardQuestion .progress {
+  background-color: var(--section-color);
+  margin-bottom: 10px;
+}
+.cardQuestion .progress span {
+  display: block;
+  height: 100%;
+  color: white;
+  background-color: var(--main-color);
+}
+.voted {
+  color: #4caf50;
+  font-weight: bold;
+}
+label {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 10px;
+}
+label input {
+  position: absolute;
+  left: -9999px;
+  cursor: pointer;
+}
+label input:checked + span {
+  background-color: #d6dce5;
+}
+label input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em var(--main-color);
+}
+label span {
+  display: flex;
+  align-items: center;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  border-radius: 99em;
+  transition: 0.25s ease;
+}
+label span:hover {
+  background-color: #d6dce5;
+}
+label span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em var(--main-color);
+}
+.cardQuestion input[type="submit"] {
+  width: 30%;
+  background-color: var(--main-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 10px auto;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .cardQuestion input[type="submit"] {
+    width: 60%;
+  }
+}
+.cardQuestion input[type="submit"]:hover {
+  background-color: var(--main-color-alt);
+}
