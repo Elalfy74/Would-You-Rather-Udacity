@@ -2,6 +2,7 @@
 
 ## Abstract: 
 Project is a site where users could vote for questions and add new questions
+[Live Preview](https://would-you-rather-23444.web.app/)
 
 ## Languages and Features:
 * HTML
